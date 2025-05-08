@@ -1,0 +1,64 @@
+Crop-Recommendation-System
+🌾 Crop Recommendation System
+A machine learning-based web application that recommends the most suitable crop to grow based on soil, weather, and environmental conditions.
+
+🔍 Overview
+The Crop Recommendation System helps farmers or agricultural professionals make data-driven decisions about which crop to grow on their land. By analyzing parameters such as nitrogen, phosphorus, potassium levels, temperature, humidity, pH, and rainfall, the system suggests the most appropriate crop using a trained machine learning model.
+
+🚀 Features
+🌱 Crop prediction based on key soil and environmental parameters
+🤖 Integrated machine learning model for high accuracy
+📊 Clean and user-friendly interface
+🔄 Real-time recommendation updates based on input
+🧪 Tested with real-world agricultural datasets
+🛠 Tech Stack
+Frontend: HTML, CSS, JavaScript
+Backend: Flask
+Machine Learning: Scikit-learn, Pandas, NumPy
+Deployment: Localhost / Render / Heroku
+📁 Dataset Used
+The dataset includes:
+
+N, P, K values (soil nutrients)
+Temperature (°C)
+Humidity (%)
+pH value
+Rainfall (mm)
+Available on: Kaggle – Crop Recommendation Dataset
+
+🧠 ML Model
+Trained using Random Forest Classifier
+Preprocessing: MinMaxScaler, StandardScaler
+Accuracy: ~95%
+Model and scalers are saved using Pickle (model.pkl, minmaxscaler.pkl, standscaler.pkl)
+🖥 How to Run Locally
+Clone the repository
+git clone https://github.com/your-username/crop-recommendation-system.git
+cd crop-recommendation-system
+Create and activate a virtual environment (optional but recommended)
+
+bash Copy Edit python -m venv venv source venv/bin/activate # On Windows: venv\Scripts\activate Install dependencies
+
+bash Copy Edit pip install -r requirements.txt Run the Flask server
+
+bash Copy Edit python app.py Open your browser and go to:
+
+arduino Copy Edit http://localhost:5000 📂 Project Structure perl Copy Edit crop-recommendation-system/ │ ├── app.py # Flask backend ├── model.pkl # Trained ML model ├── minmaxscaler.pkl # MinMaxScaler ├── standscaler.pkl # StandardScaler ├── requirements.txt # Python dependencies ├── templates/ │ └── index.html # Frontend form └── README.md # Project documentation 📸 Screenshots Add screenshots here of the web interface and prediction results
+
+🚧 Future Improvements 🌦 Integrate weather API for real-time weather data
+
+📱 Add mobile-friendly responsive design
+
+📊 Dashboard to visualize predictions and inputs
+
+🌐 Multilingual support for regional farmers
+
+🧠 Upgrade to deep learning models for better accuracy
+
+🤝 Contributing Contributions are welcome! Please open an issue first to discuss what you’d like to change or add.
+
+📄 License This project is licensed under the MIT License.
+
+🙌 Acknowledgements Atharva Ingle for the Kaggle dataset
+
+Scikit-learn and Flask communities
